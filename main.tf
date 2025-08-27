@@ -14,6 +14,6 @@ module sns_topic {
     context     = module.this.context
 
     allowed_iam_arns_for_sns_publish = [
-        event_producer_role_arn
+        local.event_producer_role_arn
     ]
 }
